@@ -1,57 +1,41 @@
 \documentclass[12pt,a4paper]{article}
 
-% --- Packages ---
+% ——— Basics ———
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{setspace}
 \doublespacing
-\usepackage{microtype}
-\usepackage{newtxtext,newtxmath}
-\usepackage{xcolor}
-\usepackage{graphicx}
 \usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% ——— Section styles (same as your file) ———
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% ——— APA references ———
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{References.bib}
-\usepackage{hyperref}
-\usepackage{fancyhdr}
+\DeclareLanguageMapping{english}{english-apa}
 
-% --- Header/Footer ---
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\setlength{\headheight}{15pt}
-
-% --- Metadata ---
-\newcommand{\papertitle}{SAFE: EU’s €150 Billion Defence Instrument}
-\newcommand{\groupinfo}{Group 16}
-\newcommand{\authorsblock}{Broere, Sem \\ Noordhoek, Nolt \\ van der Giesen, Coen}
-\newcommand{\courseinfo}{The European Union as an External Power}
-\newcommand{\duedate}{29 September 2025}
+% ——— Title info (use \maketitle to match the nice example) ———
+\title{SAFE: EU’s €150 Billion Defence Instrument}
+\author{%
+  Group 16\\[0.5em]
+  Broere, Sem\\
+  Noordhoek, Nolt\\
+  van der Giesen, Coen\\[1em]
+  The European Union as an External Power
+}
+\date{September 30, 2025}
 
 \begin{document}
 
-% --- Title page ---
-\begin{titlepage}
-  \centering
-  \vspace*{3cm}
-  {\bfseries\Large \papertitle\par}
-  \vspace{2cm}
-  {\large \groupinfo\par}
-  \vspace{1cm}
-  {\large \authorsblock\par}
-  \vspace{1.5cm}
-  {\large Course: \courseinfo\par}
-  \vspace{0.75cm}
-  {\large Deadline: \duedate\par}
-  \vfill
-  {\large \today\par}
-\end{titlepage}
+% Title page in Computer Modern (default) to match the first image
+\maketitle
 
-\setcounter{page}{1}
-
-% --- Main content ---
 \section{Introduction}
 
 \noindent The Security Action for Europe (SAFE) represents a watershed moment in European Union defense policy, establishing a €150 billion loan instrument to accelerate defense procurement and industrial capacity. Adopted on May 27, 2025, through Council Regulation (EU) 2025/1106, SAFE emerged as the EU's response to deteriorating security conditions following Russia's full-scale invasion of Ukraine and evolving global threats \parencite{council2025safe, commission2025proposal}. This paper examines SAFE's decision-making process, institutional dynamics, and contribution to EU power projection in the international arena. Through analysis of its implementation mechanisms and emerging challenges, this research demonstrates how SAFE strengthens the EU's strategic autonomy while revealing persistent tensions between emergency decision-making and democratic legitimacy in European defense integration.
