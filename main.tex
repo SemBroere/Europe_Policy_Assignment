@@ -1,101 +1,88 @@
 \documentclass[12pt,a4paper]{article}
+
+% Basics
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{geometry}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage[hidelinks]{hyperref}
-\usepackage{csquotes}
-
-% ---- Bibliography (APA with biber) ----
-\usepackage[style=apa,backend=biber]{biblatex}
-\DeclareLanguageMapping{english}{english-apa}
-\addbibresource{References.bib} % <-- make sure this file exists in the repo
-
-% Page setup
 \geometry{margin=1in}
+\usepackage{setspace}
 \doublespacing
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% Section styles (compact, like your earlier file)
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
 
+% APA references
+\usepackage[style=apa,backend=biber,sortcites=true,sorting=nyt]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{References.bib} % make sure the filename/case matches
+
+% Title info (Computer Modern + \maketitle for the “nice” look)
+\title{Security Action for Europe (SAFE):\\ Strengthening EU Strategic Autonomy Through Defense Industrial Integration}
+\author{%
+  Group 16\\[0.5em]
+  Sem Broere(s3410552)\\
+  Nolt Noordhoek(s)\\
+  Coen van der Giesen(s4080726)\\[1em]
+  The European Union as an External Power
+}
+\date{September 29, 2025}
+
 \begin{document}
 
-% ----- Title page -----
-\begin{titlepage}
-    \thispagestyle{empty} % no page number on the cover
-    \centering
-    \vspace*{3cm}
-    {\huge \textbf{EU Policy Advice Paper}} \\[1em]
-    {\Large SAFE: EU’s €150 Billion Defence Instrument} \\[4cm]
+\maketitle
 
-    {\large Group 16 \\[0.5em]
-    Sem Broere (s3410552) \\
-    Nolt Noordhoek (s3904598) \\
-    Coen van der Giesen (s4956877)} \\[2cm]
+\section*{Introduction}
+\noindent The Security Action for Europe marks a critical step in strengthening EU defense policy, establishing a €150 billion loan plan to increase defense purchasing and industrial capacity \parencite{commission2025proposal}. Adopted in May 2025 in Council Regulation (EU) 2025/1106 \parencite{eurlex2025,council2025safe}. SAFE was thought up as the EU's response to the worsening security conditions after Russia's invasion of Ukraine and other emerging global threats \parencite{commission2025proposal}. This paper examines SAFE's decision-making process, institutional dynamics, and the total contribution to EU power in the global arena. Through analysis of its implementation mechanisms and emerging challenges, this research demonstrates how SAFE improves the EU's strategic autonomy while also showing tensions between emergency decision-making and our democratic legitimacy for European defense integration.
 
-    {\large The European Union as an External Power} \\[1cm]
-    {\large September 30, 2025}
-\end{titlepage}
+\section*{The SAFE Instrument: Objectives and Framework}
+\noindent SAFE is the EU’s most ambitious defense financing policy since its inception. It provides long-term loans to Member States for defense purchases with 45-year durations and 10-year grace periods \parencite{commission2025proposal}. The instrument tries to address the critical capability gaps identified in the 2025 European Defense Industrial Strategy---in particular the ammunition stockpiles, air defense systems, and other strategic enablers \parencite{commission2025safe}. As outlined in COM(2025) 122 final, SAFE operates with a two-tier category system: Category 1 envelops immediate needs including ammunition and cyber capabilities, Category 2 covers complex systems like air defense and maritime defence investment \parencite{commission2025safe}.
 
-% Start numbering from 1 on the main text
-\pagenumbering{arabic}
-\setcounter{page}{1}
+\noindent The measure directly links to the broader ReArm Europe Plan, an €800 billion defense spending initiative through 2030 \parencite{euronews2025}. SAFE represents the first operational pillar alongside changes in the cohesion funds and private capital mobilization programs \parencite{euronews2025}. This complete approach signals a significant shift in the EU from fragmented national defense provisioning to a coordinated European defense industrial policy. This addresses the normal inefficiencies where the EU collectively spends four times more than Russia on defense yet achieves a much lower output in critical capabilities \parencite{euronews2025}.
 
-\section{Introduction}
+\noindent Central to SAFE's design is the European domestic buying mandate with a minimum of 65\% content from EU, EEA-EFTA countries or Ukraine \parencite{commission2025proposal}. This mandate aims to strengthen the European Defense Technological and Industrial Base (EDTIB) while also reducing dependencies on third-country suppliers. The regulation also included VAT exemptions for SAFE purchases, addressing the EU’s immediate needs for a fast-track of our capability developments \parencite{commission2025proposal}.
 
-\noindent The Security Action for Europe (SAFE) represents a watershed moment in European Union defense policy, establishing a €~150 billion loan instrument to accelerate defense procurement and industrial capacity. Adopted on May 27, 2025, through Council Regulation (EU) 2025/1106, SAFE emerged as the EU's response to deteriorating security conditions following Russia's full-scale invasion of Ukraine and evolving global threats \parencite{council2025safe, commission2025proposal}. This paper examines SAFE's decision-making process, institutional dynamics, and contribution to EU power projection in the international arena. Through analysis of its implementation mechanisms and emerging challenges, this research demonstrates how SAFE strengthens the EU's strategic autonomy while revealing persistent tensions between emergency decision-making and democratic legitimacy in European defense integration.
+\section*{Decision-Making Process and Institutional Dynamics}
+\noindent The adoption of SAFE revealed a lot of long-standing tensions in the EU's decision making. The Council used Article 122 TFEU---the EU’s solidarity clause for ``severe difficulties caused by natural disasters or exceptional occurrences beyond control.'' This emergency procedure made unanimous Council adoption without European Parliament co-legislation possible, and marked only the second use of Article 122 for defense matters following another initiative in 2022 \parencite{verfassungsblog2025}.
 
-\section{The SAFE Instrument: Objectives and Framework}
+\noindent The Commission's proposal on March 19, 2025, underwent a fast-track Council examination. All 27 Member States supported the regulation during the May 27 Council meeting---a hallmark show of unanimity given traditional divisions on defense matters \parencite{council2025safe,commission2025proposal}. This consensus however masked underlying procedural concerns. Several Member States, while supporting SAFE itself, expressed concern about circumventing ordinary legal procedures, especially since the instrument's scale and multi-year implications are immense \parencite{verfassungsblog2025}.
 
-\noindent SAFE constitutes the EU's most ambitious defense financing mechanism to date, providing long-term, competitively priced loans to Member States for defense procurement with 45-year maximum durations and 10-year grace periods \parencite{commission2025proposal}. The instrument addresses critical capability gaps identified in the 2025 European Defense Industrial Strategy, particularly ammunition stockpiles, air defense systems, and strategic enablers. As outlined in COM(2025) 122 final, SAFE operates through a two-tier categorization system: Category 1 encompasses immediate needs including ammunition and cyber capabilities, while Category 2 covers complex systems like air defense and maritime platforms requiring enhanced European industrial participation \parencite{commission2025safe}.
+\noindent The European Parliament's exclusion triggered an institutional conflict. On August 25, 2025, the EU Parliament filed an Article 263 TFEU annulment action with the Court of Justice, which challenges the legal basis and argues that defense industrial development is not an ``exceptional occurrence'' \parencite{eunews2025parliament}. The Parliament argues further that using Article 122 for programmatic defense initiatives decreases the ability for democratic oversight and sets a bad precedent for future conflict resolutions. This legal challenge, while not stopping its implementation, does create uncertainty regarding SAFE's long-term stability \parencite{eunews2025parliament}.
 
-\noindent The measure directly links to the broader ReArm Europe Plan, an €~800 billion defense spending initiative through 2030. SAFE represents the first operational pillar, complemented by Stability and Growth Pact flexibility measures, cohesion fund adaptations, and private capital mobilization mechanisms \parencite{euronews2025}. This comprehensive approach signals the EU's shift from fragmented national procurement toward coordinated European defense industrial policy.
+\noindent The European Defence Agency (EDA) and European External Action Service (EEAS) provided technical opinions supporting SAFE's design, seeking alignment with Capability Development Priorities and Strategic Compass objectives; the European Economic and Social Committee showed support while noting concerns about regional industrial balance \parencite{commission2025safe}.
 
-\noindent Central to SAFE's design is the European preference requirement mandating minimum 65\% content from EU, EEA-EFTA countries, or Ukraine. This provision aims to strengthen the European Defense Technological and Industrial Base (EDTIB) while reducing dependencies on third-country suppliers \parencite{commission2025proposal}. The regulation includes VAT exemptions for SAFE-supported procurements and enables 15\% pre-financing upon agreement signature.
+\section*{Implementation and Member State Engagement}
+\noindent Eighteen of the twenty-seven Member States have stated they want to participate, already requesting around €127 billion (85\% of available funding) \parencite{commission2025update}. This group includes the more well-known defence spenders, like Italy, France and Poland, but also smaller states looking to upscale and modernize, like the Baltic States. The intense participation demonstrates recognition of the need for collective defense and the attractiveness of SAFE’s financing terms \parencite{commission2025update}.
 
-\section{Decision-Making Process and Institutional Dynamics}
+\noindent The participating Member States face harsh implementation requirements. The National Defense Investment Plans, due November 30, 2025, must actively align with EU Capability Development Priorities, and the regulation requires a minimum of 20\% joint procurement of SAFE-funded acquisitions, thus promoting joint operations between states \parencite{eurlex2025}. Early implementation has shown that Members vary widely in capacities. Larger Members can quickly develop in-depth plans, while smaller Members struggle to meet administrative requirements and are limited by their industrial base.
 
-\noindent The adoption of SAFE revealed fundamental tensions in EU crisis decision-making. The Council employed Article 122 TFEU, the Treaty's solidarity clause for \enquote{severe difficulties caused by natural disasters or exceptional occurrences beyond control.} This emergency procedure enabled unanimous Council adoption without European Parliament co-legislation \parencite{verfassungsblog2025}.
+\noindent The Commission established a SAFE Coordination Unit within DG~DEFIS, processing applications and screening them within European preference rules. First assessments have shown strong interest in air defense systems and long-range precision fires, reflecting immediate needs; capacity constraints in ammunition production and integration of complex systems form the biggest bottlenecks \parencite{commission2025safe}.
 
-\noindent The Commission's proposal on March 19, 2025, underwent accelerated Council examination, with the Hungarian Presidency prioritizing rapid adoption. All 27 Member States supported the regulation during the May 27 Council meeting \parencite{council2025safe}. However, this consensus masked underlying procedural concerns.
+\section*{Contribution to EU Power in the International Arena}
+\noindent SAFE fundamentally transforms the EU's international power projection through three interconnected dimensions: strategic autonomy, economic leverage, and normative influence. By establishing a unified defense financing mechanism, SAFE enhances the EU's credibility as a security provider and addresses burden-sharing concerns \parencite{verfassungsblog2025}.
 
-\noindent The European Parliament's exclusion from co-decision triggered immediate institutional conflict. On August 25, 2025, Parliament filed an Article 263 TFEU annulment action with the Court of Justice, challenging the legal basis and arguing that defense industrial development does not constitute an \enquote{exceptional occurrence} warranting emergency procedures \parencite{eunews2025parliament}.
+\noindent The instrument strengthens hard power capabilities through accelerated military modernization and industrial base expansion; the €150~billion investment combined with broader ReArm Europe initiatives positions the EU as a major defense industrial actor \parencite{council2025safe,euronews2025}. This industrial capacity translates into diplomatic leverage, enabling the EU to offer security assistance and defense partnerships based on European technologies and standards \parencite{council2025safe}.
 
-\noindent The European Defence Agency (EDA) and European External Action Service (EEAS) provided technical opinions supporting SAFE's design. The European Economic and Social Committee issued a favorable opinion while noting concerns about SME participation and regional industrial balance \parencite{commission2025safe}.
+\noindent SAFE enhances economic power through industrial policy coordination and market shaping. The European preference requirements create a protected market that incentivizes innovation and scale previously impossible under fragmented national purchasing \parencite{commission2025proposal}. This market power extends internationally through export potential and technology transfer agreements with associated countries such as Ukraine \parencite{commission2025proposal,euronews2025}.
 
-\section{Implementation and Member State Engagement}
+\noindent The regulation exercises normative power by establishing standards for responsible defense purchasing, including transparency and anti-corruption safeguards; the inclusion of Ukraine in European preference provisions demonstrates value-based solidarity \parencite{euronews2025}.
 
-\noindent Eighteen Member States have signaled participation intent, requesting approximately €~127 billion (85\% of available funding) \parencite{commission2025update}. The high participation rate demonstrates widespread recognition of collective defense needs and SAFE's attractive financing terms.
+\section*{Critical Assessment: Shortcomings and Obstacles}
+\noindent Despite ambitious objectives, SAFE faces significant structural and political challenges threatening effectiveness. The European Parliament's legal challenge highlights the democratic shortage in emergency decision-making, potentially undermining public support for defense initiatives \parencite{eunews2025parliament,verfassungsblog2025}. Even if the Court upholds Article~122 usage, the precedent of bypassing co-legislation for major spending programs risks weakening EU institutional balance and accountability \parencite{verfassungsblog2025}.
 
-\noindent Member States face stringent implementation requirements. National Defense Investment Plans, due November 30, 2025, must demonstrate alignment with EU Capability Development Priorities and coordination mechanisms with neighboring states \parencite{eurlex2025}. Early implementation reveals varying state capacities, with larger Member States rapidly developing comprehensive plans while smaller states struggle with administrative requirements.
+\noindent Industrial capacity limitations present immediate implementation obstacles: after decades of underinvestment, industry cannot rapidly scale to meet SAFE-generated demand; the 65\% European content requirement, while promoting autonomy, may delay delivery and increase costs \parencite{commission2025update,commission2025proposal}. Several Member States have already requested flexibility for Category~2 systems where European alternatives remain unavailable \parencite{commission2025update}.
 
-\noindent The Commission established a SAFE Coordination Unit within DG DEFIS, processing applications and monitoring compliance with European preference rules. Initial assessments indicate strong interest in air defense systems and long-range precision fires, reflecting immediate operational needs \parencite{commission2025safe}.
+\noindent The voluntary nature of participation creates potential capability gaps and undermines collective defense coherence. Some Member States have not indicated participation, potentially pursuing national solutions or alternative partnerships, which reduces economies of scale and interoperability gains \parencite{euronews2025}.
 
-\section{Contribution to EU Power in the International Arena}
+\noindent Financial sustainability remains uncertain given competing EU budget priorities and potential downturns. While SAFE loans offer favorable terms, Member States must eventually repay borrowing, potentially constraining future defense spending; interactions with fiscal rules remain debated \parencite{verfassungsblog2025}.
 
-\noindent SAFE fundamentally transforms the EU's international power projection through three dimensions: strategic autonomy, economic leverage, and normative influence. By establishing a unified defense financing mechanism, SAFE enhances the EU's credibility as a security provider \parencite{verfassungsblog2025}.
+\section*{Conclusion}
+\noindent SAFE represents a monumental shift in European defense integration. It mobilizes truly unprecedented financial resources for collective capability development, and its rapid adoption demonstrates the EU’s capacity for decisive action during geopolitical crises \parencite{council2025safe}. Although challenges in implementation show limitations in the EU’s fragmented ruling class and industrial capacity, strengthening hard power and economic leverage contributes significantly to EU international power projection and strategic autonomy.
 
-\noindent The instrument strengthens \textbf{hard power} capabilities through accelerated military modernization and industrial base expansion \parencite{council2025safe}.
-
-\noindent SAFE enhances \textbf{economic power} through industrial policy coordination and market shaping \parencite{commission2025proposal}.
-
-\noindent The regulation exercises \textbf{normative power} by establishing standards for responsible defense procurement. The inclusion of Ukraine in European preference provisions demonstrates solidarity \parencite{euronews2025}.
-
-\section{Critical Assessment: Shortcomings and Obstacles}
-
-\noindent Despite ambitious objectives, SAFE faces significant structural and political challenges. The European Parliament's legal challenge highlights the democratic deficit in emergency decision-making \parencite{eunews2025parliament}.
-
-\noindent Industrial capacity constraints present immediate implementation obstacles. The 65\% European content requirement, while promoting autonomy, may delay delivery of critical capabilities \parencite{commission2025update}.
-
-\noindent The voluntary nature of participation creates potential capability gaps. Nine Member States, including Germany and the Netherlands, have not indicated participation \parencite{euronews2025}.
-
-\noindent Financial sustainability remains uncertain given competing EU budget priorities and future repayment obligations \parencite{verfassungsblog2025}.
-
-\section{Conclusion}
-
-\noindent SAFE represents a paradigm shift in European defense integration, mobilizing unprecedented financial resources. It strengthens hard power, economic leverage, and normative influence.
-
-\noindent However, democratic legitimacy concerns and implementation obstacles suggest that SAFE's transformative potential depends on resolving fundamental tensions. Its success ultimately hinges on sustained political commitment and industrial modernization.
+\noindent However, the democratic legitimacy concerns raised by Parliament's legal challenge and practical execution roadblocks suggest that SAFE's potential remains reliant on solving tensions between emergency imperatives and thoughtful governance. The measure's success depends on continued political commitment and industrial base modernization, balancing efficiency with democratic accountability \parencite{eunews2025parliament,verfassungsblog2025}. As the EU navigates an increasingly conflicted international environment, SAFE provides important tools for collective defense. The coming months—when Member States finalize investment schemes and the Court considers the Parliament's challenge—will determine whether SAFE ensures lasting defense integration or represents another incomplete step toward strategic autonomy.
 
 \newpage
 \printbibliography[heading=bibintoc,title={References}]
